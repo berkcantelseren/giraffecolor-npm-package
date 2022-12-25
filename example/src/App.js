@@ -1,10 +1,18 @@
 import React from 'react'
 
-import { ExampleComponent } from 'giraffecolor'
+import { Button } from 'giraffecolor'
 import 'giraffecolor/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+    <Button type='primary' onClick={()=>alert("https://github.com/berkcantelseren")} text="Click Me" /> <br />
+    <Button type='secondary' onClick={()=>alert("https://github.com/berkcantelseren")} text="Click Me" /> <br />
+    <Button type='dashed' onClick={()=>alert("https://github.com/berkcantelseren")} text="Click Me" /> <br />
+    <Button type='link' onClick={()=>alert("https://github.com/berkcantelseren")} text="Click Me" /> <br />
+
+    </div>
+  )
 }
 
 export default App
